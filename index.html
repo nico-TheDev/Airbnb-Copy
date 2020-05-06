@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb &ndash; Rent a house</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/app.js" defer></script>
+    <script src="js/all.min.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <span class="nav__logo">
+                <i class="fab fa-airbnb"></i>
+                airbnb
+            </span>
+
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Register</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Host your home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+                <li class="nav__item"><a href="#" class="nav__link btn">Signup</a></li>
+            </ul>
+
+            <button class="burger"><i class="fas fa-align-right"></i></button>
+
+            <ul class="mobile">
+                <button class="close"><i class="fas fa-times"></i></button>
+                <li class="mobile__item"><a href="#" class="mobile__link">Register</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Host your home</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Help</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Login</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link btn">Signup</a></li>
+
+                <div class="mobile__search">
+                    <input type="text" class="mobile__input" placeholder="Search places..">
+                    <button type="submit" class="btn">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header__text">
+            <h1 class="header__title">Our House, Your Home</h1>
+            <p class="desc u-mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, voluptate.</p>
+            <a href="#" class="btn">Find home</a>
+        </div>
+
+        <div class="search">
+            <form action="#" class="search__hold">
+
+                <div class="search__field">
+                    <i class="fas fa-map-marker icon"></i>
+                    <input type="text" class="search__input" placeholder="Location">
+                </div>
+                <div class="search__field">
+                    <i class="fas fa-moon icon"></i>
+                    <input type="text" class="search__input" placeholder="No. of Days">
+                </div>
+                <div class="search__field">
+                    <i class="fas fa-user icon"></i>
+                    <input type="number" class="search__input" placeholder="Number of Guests">
+                </div>
+
+                <button type="submit" class="btn">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+
+            </form>
+        </div>
+    </header>
+
+    <section class="gallery u-p-2 u-centered">
+        <h2 class="title u-mb-1">Create your adventure</h2>
+        <p class="desc u-mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ad</p>
+        <div class="container">
+            <div class="gallery__item u-span-2" data-name='New York'>
+                <img src="/img/newyork-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item none">
+                <img src="/img/house-ny-min.jpg" alt="" class="gallery__img">
+
+                <div class="gallery__showcase">
+                    <img src="/img/user1.jpg" alt="" class="gallery__user">
+                    <h3 class="gallery__title">Andy's Home</h3>
+                    <p class="desc">New York</p>
+                    <span class="gallery__price">$170</span>
+                </div>
+            </div>
+            <div class="gallery__item" data-name='Hawaii'>
+                <img src="/img/beach-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item" data-name='Paris'>
+                <img src="/img/paris-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item" data-name='Barcelona'>
+                <img src="/img/barcelona-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item none">
+                <img src="/img/japan-house-min.jpg" alt="" class="gallery__img">
+                <div class="gallery__showcase">
+                    <img src="/img/user2.jpg" alt="" class="gallery__user">
+                    <h3 class="gallery__title">Kana's Home</h3>
+                    <p class="desc">Tokyo</p>
+                    <span class="gallery__price">$200</span>
+                </div>
+            </div>
+            <div class="gallery__item u-span-2" data-name='Tokyo'>
+                <img src="/img/tokyo-min.jpg" alt="" class="gallery__img">
+                
+            </div>
+            <div class="gallery__item" data-name='San Francisco'>
+                <img src="/img/sf-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item" data-name='Berlin'>
+                <img src="/img/berlin-min.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item" data-name='Budapest'>
+                <img src="/img/budapest-min.jpg" alt="" class="gallery__img">
+            </div>
+            
+            <button class="btn u-centered">Show More</button>
+        </div>
+
+    </section>
+
+
+    <section class="fill u-py-3 u-centered">
+        <h2 class="title u-mb-1">DISCOVER THE BEAUTY</h2>
+        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, provident.psum dolor sit amet consectetur adipisicing elit. Similique, ducimus?</p>
+        <button class="btn">Discover</button>
+    </section>
+
+    <section class="community">
+        <h2 class="title u-centered u-mb-3">The Community</h2>
+
+        <div class="community__cards">
+            <div class="card">
+                <img src="/img/create.svg" alt="" class="card__img">
+                <h3 class="card__name">Create</h3>
+                <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="card card--2">
+                <h3 class="card__name">Leon & Claire</h3>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus molestias dignissimos laboriosam consequuntur nulla facilis, repellendus iusto sit fuga? Velit.</p>
+            </div>
+
+            <div class="card">
+                <img src="/img/compare.svg" alt="" class="card__img">
+                <h3 class="card__name">Compare</h3>
+                <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="card card--4">
+                <h3 class="card__name">Meet Nina</h3>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus molestias dignissimos laboriosam consequuntur nulla facilis, repellendus iusto sit fuga? Velit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer u-py-3">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">Discover</li>
+                <li class="footer__item">Explore</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">Buy Home</li>
+                <li class="footer__item">Rent Room</li>
+                <li class="footer__item">Get House</li>
+                <li class="footer__item">Grab Owner</li>
+                <li class="footer__item">Transactions</li>
+
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">Privacy Policies</li>
+                <li class="footer__item">Rules</li>
+                <li class="footer__item"></li>
+                <li class="footer__item">Explore</li>
+                <li class="footer__item">Discover</li>
+                <li class="footer__item">Terms of Services</li>
+            </ul>
+        </div>
+
+        <ul class="footer__social">
+            <li class="footer__item"><i class="icon fab fa-airbnb"></i></li>
+            <li class="footer__item"><i class="icon fab fa-twitter"></i></li>
+            <li class="footer__item"><i class="icon fab fa-instagram"></i></li>
+            <li class="footer__item"><i class="icon fab fa-youtube"></i></li>
+            <li class="footer__item"><i class="icon fab fa-pinterest"></i></li>
+            <li class="footer__item"><i class="icon fab fa-google-plus"></i></li>
+        </ul>
+        <p class="footer__name u-centered">&copy; All Rights Reserved 2020</p>
+    </footer>
+</body>
+</html>

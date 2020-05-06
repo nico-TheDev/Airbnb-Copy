@@ -1,0 +1,42 @@
+@mixin query($bp){
+    @if ($bp == tabp){
+        @media only screen and(max-width:800px){@content};
+    }
+    @if ($bp == cp){
+        @media only screen and(max-width:600px){@content};
+    }
+    @if ($bp == scp){
+        @media only screen and(max-width:450px){@content};
+    }
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin:0;
+    padding: 0;
+}
+
+html{
+    box-sizing:border-box;
+
+    @include query(tabp){
+        font-size: 90%;
+    }
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
